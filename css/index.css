@@ -1,0 +1,338 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: pedro;
+}
+.fas{
+    color:white;
+    font-size:32px;
+    margin:10px;
+    cursor:pointer;
+    display:none;
+}
+html,body{
+    height:100%;
+    overflow-X: hidden;
+}
+header{
+    height:680px;
+    background:rgb(0, 0, 0);
+    background-image:url('./20210714_125700-removebg-preview.png');
+    background-repeat: no-repeat;
+    background-position:center 10px ;
+    background-size: contain;
+   
+    padding:10px 0;
+
+}
+.desk li{
+    display:inline-block;
+   margin:0 10px;
+   
+}
+.desk{
+    margin:20px auto;
+  font-size:18px;
+  position:absolute;
+  right:10px;
+  
+}
+.desk a{
+    color:gold;
+}
+.tit{
+    font-size:100px;
+    color:white;
+    font-weight: bold;
+    margin:300px 0 10px 0;
+    text-align:center;
+}
+.soci{
+    
+    margin:0 auto;
+   
+    position:fixed;
+    right:30px;
+    top:80%;
+    z-index:10;
+    transform: translateY(-50%);
+    text-align:center;
+}
+.facebook a{
+    width:60px;
+    height:60px;
+   color:#0d47a1;
+    
+ 
+    
+    font-size:30px;
+
+}
+.youtube a{
+    width:60px;
+    height:60px;
+   color:#d50000;
+    
+ 
+   
+    font-size:30px;
+    
+   
+
+}
+.instagram a{
+    width:60px;
+    height:60px;
+   color:#af0daf;
+    
+    border-bottom: 2px solid white;;
+    border-top: 2px solid white;;
+    padding:10px;
+    font-size:30px;
+   
+
+    
+}
+
+@font-face{
+    font-family:pedro;
+    src:url('./OtomanopeeOne-Regular.ttf');
+}
+.instagram{
+    margin:20px 0;
+}
+.desk a:hover{
+    text-decoration:underline;
+}
+fieldset{
+    border:0;
+    border-top:2px solid black;
+    width:70%;
+    margin:0 auto;
+}
+fieldset legend{
+    text-align:center;
+}
+.titulo{
+    width:80%;
+    margin:0 auto;
+}
+.titulo p{
+    margin:15px 0;
+}
+.foto{
+    width:100%;
+    background:black;
+    height:450px;
+    display:flex;
+    align-items: center;;
+    margin:20px 0 0 0 ;
+    padding-top:20px;
+}
+.decorar{
+    width:100%;
+    height:100%;
+    background:green;
+    margin:0 auto;
+    overflow:hidden;
+}
+.esticar{
+    width:3000px;
+    height:100%;
+    background:rgb(0, 0, 0);
+    display:flex;
+    align-items: center;;
+}
+.esticar img{
+   
+    height:100%;
+    
+}
+.music{
+    width:100%;
+    display:flex;
+   
+}
+.list{
+    width:100%;
+    height:350px;
+    background:rgb(0, 0, 0);
+    overflow-y:scroll;
+    overflow-X:hidden;
+    text-align:center;
+    margin:0 auto;
+}
+.play{
+    width:90%;
+   height:100px;
+    background:rgb(0, 0, 0);
+     display: flex;
+    align-items: center;;
+    
+}
+.musica{
+    width:90%;
+    height:15%;
+    background:rgb(0, 0, 0);
+    border-bottom:2px solid white;
+    border-radius:200px;
+    color:gold;
+    margin:0 auto;
+    text-align:center;
+    cursor:pointer;
+}
+.description p{
+  font-size:0;
+}
+audio{
+   position:relative;
+   left:50%;
+   transform: translate(-50%);
+    appearance: none;
+    -webkit-appearance: none;
+   width:90%;
+   margin:0 auto;
+}
+
+.list::-webkit-scrollbar{
+    width:0;
+    
+}
+
+body::-webkit-scrollbar{
+    width:0;
+    
+}
+
+.album{
+    width:100%;
+    height:500px;
+    background:white;
+}
+.concerto div{
+    display:inline-block;
+    width:400px;
+    margin: 30px 0;
+}
+.concerto{
+    width:100%;
+    height:350px;
+    background:black;
+    color:white;
+    margin:0 auto;
+    text-align:center;
+}
+.concerto fieldset{
+    border:0;
+    border-top:2px solid rgb(253, 253, 253);
+    width:90%;
+    margin:0 auto;
+    
+}
+.concerto fieldset legend{
+   text-align:center;
+}
+footer{
+    width:100%;
+    height:30px;
+    text-align:center;
+    background:rgb(32, 30, 30);
+    color:white;
+}
+.mobile{
+    width:80%;
+    height:100%;
+    background:rgb(12, 12, 12);
+}
+.mobile li{
+    width:100%;
+    padding:20px 10px;
+    border-bottom:var(--pedro);
+    list-style-type:none;
+    color:gold;
+}
+.mobile>li>a{
+    color:gold;
+}
+.all{
+    width:100%;
+    height:680px;
+    background:rgba(0,0,0,0.5);
+    display:none;
+    position:absolute;
+    top:0;
+}
+
+@keyframes height{
+    0%{
+        width:0;
+    }
+    100%{
+        width:80%
+    }
+}
+@keyframes fadein{
+    0%{
+        width:80%;
+    }
+    100%{
+        width:0;
+    }
+}
+@media screen and (max-width:980px){
+    .fas{
+        display:block;
+    }
+    .desk{
+        display:none;
+    }
+}
+:root{
+    --pedro:2px solid rgb(0, 0, 0);
+}
+.window{
+    width:90%;
+    height:80%;
+  
+    margin:10px auto;
+    overflow-X:hidden;
+}
+.big{
+    width:3000px;
+    
+    height:100%;
+}
+.junto{
+    width:400px;
+    height:100%;
+   
+    display:inline-block;
+    text-align:center;
+    
+}
+.junto img{
+    height:80%;
+    margin:0 auto;
+}
+.junto h1{
+    margin-top:-10px;
+}
+.seta{
+    
+    margin:0 auto;
+   width:80px;
+  
+}
+.seta img{
+    margin-left:20px;
+    cursor:pointer;
+}
+@keyframes border{
+    0%{
+        border-color:red;
+    }
+    100%{
+        border-color:black;
+    }
+}
